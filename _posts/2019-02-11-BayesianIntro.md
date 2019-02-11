@@ -1,8 +1,8 @@
-___
+---
 title: Introduction to Bayesian Deep Learning
 category: Bayesian Deep Learning
 tag: BDL
-___
+---
 
 
 ## 0. Introduction to Bayesian Deep Learning
