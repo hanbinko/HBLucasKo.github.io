@@ -18,4 +18,4 @@ In order to fully understand **Bayesian Deep Learning**, we need to go slowly st
 
 Let's look at the picture below,
 
-<center><img src='\..\public\img\1.png'></center>
+<center><img src='public/img/1.png'></center>
