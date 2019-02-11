@@ -4,4 +4,4 @@ Hi. My name is Han Bin Ko or Lucas Ko. I will be posting texts and codes for som
 
 E-mail : hb_ko@.ac.kr
 
-blog : https://HBLucasKo.gitgub.io
+blog : https://HBLucasKo.github.io
