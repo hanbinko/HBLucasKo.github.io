@@ -7,7 +7,7 @@ tag: tensorflow
 ## 1.1 Why Tensorflow?
 **Tensorflow** is a library for machine learning, especially deep learning program which makes us able to create codes much easier. This library is made by Google and we can easily use in Windows, Mac, Linux, Android, Ios, etc. 
 
-But we should note that Tensorflow is not the only library for machine/deep learning. * *Torch, Caffe, MXNet, CNTK, * * etc. 
+But we should note that Tensorflow is not the only library for machine/deep learning. There are also *Torch, Caffe, MXNet, CNTK* etc. 
 
 So why use Tensorflow??
 
