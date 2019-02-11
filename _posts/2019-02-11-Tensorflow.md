@@ -15,7 +15,8 @@ My answer is that Tensorflow has a large community! For an engineer like me, fix
 
 I’m not saying that other libraries are bad~ But, if you want to start learning about libraries or deep learning, I recommend you to start from learning Tensorflow!!! My codes in this blog will mostly be done in Tensorflow too.
 
-<img src=https://i.imgur.com/uGHbYQ1.png>
+<a href="https://i.imgur.com/uGHbYQ1"><img src="https://i.imgur.com/uGHbYQ1.png" width="500px" title="source: imgur.com" /></a>
+
 
 ## 1.2 Installing Tensorflow
 
