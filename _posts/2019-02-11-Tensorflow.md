@@ -1,6 +1,6 @@
 ---
 title: Why Tensorflow?
-category: tensorflow
+category: Tensorflow
 tag: tensorflow
 ---
 
