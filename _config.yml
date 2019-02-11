@@ -51,7 +51,7 @@ category_page: '/blog/categories/'
 
 hero:
   image: https://HBLucasKo.github.io/public/img/corgi.jpg
-  caption: A cute corgi~
+  caption: A cute corgi
 
 # Puglins
 mathjax: true # whether support mathjax
