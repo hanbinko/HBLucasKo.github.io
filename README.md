@@ -1,7 +1,7 @@
-# ratsgo's blog
+# kolucas's blog
 
-안녕하세요, 블로그를 운영 중인 고려대 산업경영공학부 석사과정 재학 중인 이기창이라고 합니다. 제 컨택포인트는 아래와 같습니다.
+Hi. My name is Han Bin Ko or Lucas Ko. I will be posting texts and codes for some deep learning areas
 
-E-mail : gichang_lee@korea.ac.kr
+E-mail : hb_ko@.ac.kr
 
-blog : https://ratsgo.gitgub.io
+blog : https://HBLucasKo.gitgub.io
