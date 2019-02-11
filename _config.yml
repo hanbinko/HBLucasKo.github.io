@@ -23,7 +23,7 @@ version: 1.0.0
 
 # About/contact
 author:
-  name: ratsgo
+  name: KoLucas
   description: <strong>PRML</strong> Pattern Recognition and Machine Learning
   gravatar: 0a638fc7996869b1b67fb90ccf77dcfe # md5 hash of your email address
   contact:
@@ -50,8 +50,8 @@ tag_page: '/blog/tags/'
 category_page: '/blog/categories/'
 
 hero:
-  image: https://HBLUcasKo.github.io/public/img/picture.JPG
-  caption: Original Artwork &copy; Pablo Picasso. Girl before a Mirror. Boisgeloup, March 1932. Oil on canvas
+  image: https://HBLucasKo.github.io/public/img/picture.JPG
+  caption: A cute corgi~
 
 # Puglins
 mathjax: true # whether support mathjax
