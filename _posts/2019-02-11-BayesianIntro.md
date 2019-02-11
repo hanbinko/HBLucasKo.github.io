@@ -1,8 +1,9 @@
-'''
+___
 title: Introduction to Bayesian Deep Learning
 category: Bayesian Deep Learning
 tag: BDL
-'''
+___
+
 
 ## 0. Introduction to Bayesian Deep Learning
 
@@ -127,4 +128,34 @@ If you have some knowledge of deep learning, you might think this as a similar t
 
 This is also true.
 
-Back to the dice metaphor, the output now depends on the value of the dice. Output becomes random and 
+Back to the dice metaphor, the output now depends on the value of the dice which is random. We now might be able to solve or assume the range of the output if we can formulate an equation with the random output.
+
+We now need P(W|D), which is the distribution of W with the given Dataset. Our goal is to know everything about W which can be done by solving the Posterior. 
+
+Huh? Didn't we get the P(W|D) value from MAP? NOPE! We only found the W which maximizes P(W|D).
+
+Why can't we slove P(W|D)? This is because the Marginal Likelihood should be integrated with all the W but this is very very hard to get!!
+
+<center><img src="https://i.imgur.com/w8hhU9g.png"></center>
+
+This is not easy to derive so we use **Variational Inference** for approximation.
+
+We also need to solve for P(y|x) other than P(W|D).
+
+By the Conditional Expectation equation below, we can find the distribution of the output. We should note here that we are not solving for the fixed output. We are trying to get the distribution of the output.
+
+<center><img src="https://i.imgur.com/B80rLyE.png"></center>
+
+But this is also not easy which needs **Sampling** or additional **Approximation** or etc. I will try to introduce one of the techniques for this.
+
+>TLDR
+
+  - Machine Learning's goal is to find W and predict Y
+  - Non=Bayesian Deep Learning is to find the fixed W value and predict the fixed Y
+  - Bayesian Deep Learning's goal is to get the distribution of W (P(W|D)) while also predicting the distribution of Y (P(Y'|X', W).
+  
+  
+For future work, I will cover
+  - So how on earth do we get the probability P(W|D)
+  - How do we get P(Y'|X', W)
+  - How do we get the uncertainty and where can we use it??
