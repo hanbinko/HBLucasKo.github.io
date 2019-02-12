@@ -78,9 +78,9 @@ Depending on our purpose, we will want sometimes the Likelihood, sometimes the p
 
 Before we get down to business, lets quickly cover up the basic concepts of MLE and MAP.
 
-As mentioned earlier, P(D|W) is the **Likelihood** and we want to find the W which maximizes the likelihood. This is called **Maximum Likelihood Estimation(MLE) **, which we can think of finding the W which best describes the training data.
+As mentioned earlier, P(D\|W) is the **Likelihood** and we want to find the W which maximizes the likelihood. This is called **Maximum Likelihood Estimation(MLE) **, which we can think of finding the W which best describes the training data.
 
-So our goal is to first solve P(D|W) or P(Y|X, W). How do we do this??
+So our goal is to first solve P(D\|W) or P(Y\|X, W). How do we do this??
 
 When we think of **Regression**, P(Y|X, W) is a Gaussian distribution which is noise. The mean is the output f(x) for the Network, which is composed of parameter W, and the variance is random. 
 
@@ -132,17 +132,17 @@ This is also true.
 
 Back to the dice metaphor, the output now depends on the value of the dice which is random. We now might be able to solve or assume the range of the output if we can formulate an equation with the random output.
 
-We now need P(W|D), which is the distribution of W with the given Dataset. Our goal is to know everything about W which can be done by solving the Posterior. 
+We now need P(W\|D), which is the distribution of W with the given Dataset. Our goal is to know everything about W which can be done by solving the Posterior. 
 
-Huh? Didn't we get the P(W|D) value from MAP? NOPE! We only found the W which maximizes P(W|D).
+Huh? Didn't we get the P(W\|D) value from MAP? NOPE! We only found the W which maximizes P(W\|D).
 
-Why can't we solve P(W|D)? This is because the Marginal Likelihood should be integrated with all the W but this is very very hard to get!!
+Why can't we solve P(W\|D)? This is because the Marginal Likelihood should be integrated with all the W but this is very very hard to get!!
 
 <center><img src="https://i.imgur.com/w8hhU9g.png"></center>
 
 This is not easy to derive so we use **Variational Inference** for approximation.
 
-We also need to solve for P(y|x) other than P(W|D).
+We also need to solve for P(y\|x) other than P(W\|D).
 
 By the Conditional Expectation equation below, we can find the distribution of the output. We should note here that we are not solving for the fixed output. We are trying to get the distribution of the output.
 
@@ -154,11 +154,11 @@ But this is also not easy which needs **Sampling** or additional **Approximation
 
   - Machine Learning's goal is to find W and predict Y
   - Non=Bayesian Deep Learning is to find the fixed W value and predict the fixed Y
-  - Bayesian Deep Learning's goal is to get the distribution of W (P(W|D)) while also predicting the distribution of Y (P(Y'|X', W).
+  - Bayesian Deep Learning's goal is to get the distribution of W (P(W\|D)) while also predicting the distribution of Y (P(Y'|X', W).
   
   
 For future work, I will cover
-  - So how on earth do we get the probability P(W|D)
-  - How do we get P(Y'|X', W)
+  - So how on earth do we get the probability P(W\|D)
+  - How do we get P(Y'\|X', W)
   - How do we get the uncertainty and where can we use it??
   
