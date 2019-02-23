@@ -116,7 +116,7 @@ Let us first go over the term of Deep Learning. The process is as follows.
   
 This means that we found W by completely trusting all the training data.
 
-You can think that this is very similar to MLE which is maximizing the P(Y|X, W). We can solve MAP by adding the term P(W)  which W is still fixed. Because we already solved for W which maximizes the posterior. 
+You can think that this is very similar to MLE which is maximizing the P(Y\|X, W). We can solve MAP by adding the term P(W)  which W is still fixed. Because we already solved for W which maximizes the posterior. 
 
 This is why we call this **Deterministic Deep Learning**
 
@@ -154,11 +154,11 @@ But this is also not easy which needs **Sampling** or additional **Approximation
 
   - Machine Learning's goal is to find W and predict Y
   - Non=Bayesian Deep Learning is to find the fixed W value and predict the fixed Y
-  - Bayesian Deep Learning's goal is to get the distribution of W (P(W\|D)) while also predicting the distribution of Y (P(Y'|X', W).
+  - Bayesian Deep Learning's goal is to get the distribution of W (P(W\|D)) while also predicting the distribution of Y (P(Y'\|X' , W).
   
   
 For future work, I will cover
   - So how on earth do we get the probability P(W\|D)
-  - How do we get P(Y'\|X', W)
+  - How do we get P(Y'\|X' , W)
   - How do we get the uncertainty and where can we use it??
   
