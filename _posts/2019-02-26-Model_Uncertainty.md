@@ -12,7 +12,7 @@ In analyzing data or making decisions, it is necessary to be able to tell whethe
 
 Deep learning can be applied for diverse applications such as skin cancer diagnosis, autonomous vehicles, and dog breed classification websites. For example, given several pictures of dog breeds as training data, when a user uploads a photo of his dog, the website returns a prediction of the breed with high confidence. But what will happen if we input a cat’s image instead of a dog image? The image of a cat is an example of *out of distribution* test data. The model has been trained on photos of dogs of different breeds and learned how to distinguish them by giving out an output. However, by inputting a cat’s image, the model will not say anything about “cats” but will output one of the dog breeds with confidence. The illustrative example can be extended to more serious settings, such as MRI scans for patients, or autonomous car steering system. These examples are directly related to a person’s life and should be seriously considered. This means that we really must trust the **AI** by guarantying our only life. Therefore, we want our model to possess some quantity conveying a high level of uncertainty with such inputs. This means we want our model to say, “I don’t know!!” if the models receive a strange input or have low confidence.
 
-<img src=”https://i.imgur.com/gZpsuGI.png”>
+<center><img src="https://i.imgur.com/gZpsuGI.png"></center>
 
 Other situations that can lead to uncertainty include
 
@@ -39,7 +39,7 @@ One possible approach to the task could rely on active learning. This means the 
 
 It is important to note that most deep learning models do not offer model confidence. Regression models output a single vector regressing to the mean of the data and classification models output a probability vector (SoftMax) at the end of the pipeline which is often erroneously interpreted as model confidence. 
 
-<center><img src=” https://i.imgur.com/92mMsHI.png”></center>
+<center><img src="https://i.imgur.com/92mMsHI.png"></center>
 
 The image above shows a sketch of softmax input and output for an idealized binary classification problem. When training data is given between the dashed grey lines, function point estimate is shown with a solid line. Function uncertainty is shown with a shaded area. Marked with a dashed red line is a point x* far from training data and by ignoring function uncertainty, point x* is classified as class 1 with probability 1. This shows a model can be uncertain in its predictions even with a high softmax output. Passing a point estimate of a function trough a softmax results in extrapolations with unjustified high confidence for points far from the training data. However, passing the distribution (shaded area for the picture) through a softmax, better reflects classification uncertainty far from the training data. You might not get this part clearly. But let’s try to slowly figure this out. 
 
@@ -49,7 +49,7 @@ So how should we make it practical?  Well these methods should apply well to mod
 
 Let’s say that we can take almost any network trained with an SRT and given some input x’ obtain a predictive mean E[y’] (the expected model output given our input), and predictive variance Var[y’] (how much the model is confident in its prediction). Then we simulate a network output with given x’, applying SRT as if we were using the model during training (obtaining a random output through a stochastic forward pass). We repeat this process several times (for T repetitions), sampling outputs {y1’(x’), y2’(x’), …yT’(x’)}. As will be explained below, these are empirical samples from an *approximate predictive distribution*. We can get an empirical estimator for the predictive mean of our approximate predictive distribution as well as the predictive variance (uncertainty) from these samples:
 
-<center><img src=” https://i.imgur.com/QmbvJ89.png”></center>
+<center><img src="https://i.imgur.com/QmbvJ89.png"></center>
 
 More justification and explanation will be given on next post. Equation (1.4) results in uncertainty estimates which are practical with large models and big data, and that can be applied in image-based models, sequence-based models, and many different settings such as reinforcement learning and active learning.
 
