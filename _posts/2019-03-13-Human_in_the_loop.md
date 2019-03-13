@@ -19,7 +19,7 @@ Self-driving cars are a great example of implementing “human-in-the-loop” in
 
 Tesla is launching an automating driving mode that followed exactly the human-in-the-loop pattern. The car mostly drives itself on highways but insists that the human should keep their hands on the wheel for emergency. When the deep learning intelligent system senses doubt or uncertainty- maybe snow, strong illumination, or something the car has never seen before- it hands the control back to the human driver. So while the car can indeed drive itself almost at all times, it still needs human assistance.
 
-<center><img src=”https://i.imgur.com/dOMkiIj.png”></center>
+<center><img src="https://i.imgur.com/dOMkiIj.png"></center>
 
 
 #### Labeling images in Facebook
@@ -30,7 +30,7 @@ Facebook’s photo recognition algorithm has gotten crazy good! In fact, Faceboo
 
 Obtaining large dataset is very expensive due to large amount of annotations. If the machine can just ask where to annotate this will reduce a lot of work. Recently a lot of researchers are working on **active learning**, which the machine itself learns where it needs more information and asks the oracle (human annotator) to give labels for it. By achieving this method, we can use deep learning even with small datasets.
 
-<center><img src=”https://i.imgur.com/TZENn51.png”></center>
+<center><img src="https://i.imgur.com/TZENn51.png"></center>
 
 
 ## 1. Summary
