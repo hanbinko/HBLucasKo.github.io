@@ -1,5 +1,5 @@
 ---
-title: Model Uncertainty Introduction
+title: Introduction to Model Uncertainty
 category: Bayesian Deep Learning
 tag: BDL
 ---
