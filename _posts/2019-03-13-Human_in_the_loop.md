@@ -11,7 +11,7 @@ Nowadays, **machine learning**, and **deep learning** is becoming more and more 
 
 Human-in-the-loop process can be simply explained as a loop when machine relies on human and adds human judgment to its model when it isn’t sure what the answer is. This simple pattern is at the heart of many well-known, real-world use of cases in deep learning. Also, it is awesome because it solves one of the biggest issues with machine or deep learning, namely: it’s often very easy building an algorithm to 80 percent accuracy but often impossible to get an algorithm to 99 percent. The best model lets humans handle the 20 percent since 80 percent accuracy is not satisfactory enough for most of the real-world applications. Let’s look at some examples.
 
-<center><img src=”https://i.imgur.com/B6wrT0L.jpg”></center>
+<center><img src="https://i.imgur.com/B6wrT0L.jpg"></center>
 
 #### Self-driving cars
 
